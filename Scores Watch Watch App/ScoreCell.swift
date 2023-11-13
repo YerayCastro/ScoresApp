@@ -16,20 +16,20 @@ struct ScoreCell: View {
                 Text(score.title)
                     .font(.headline)
                 Text(score.composer)
-                    .font(.footnote)
+                    .font(.custom("Arial", size: 6))
                     .foregroundStyle(.secondary)
                 HStack {
                     Text(score.yearS)
                     Spacer()
                     Text(score.lengthS)
                 }
-                .font(.caption)
+                .font(.custom("Arial", size: 6))
                 .padding(.top, 5)
             }
             Image(score.cover)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100)
+                .frame(width: 80)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         }
     }

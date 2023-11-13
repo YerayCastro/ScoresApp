@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Scores_Watch_Watch_AppApp: App {
+    @StateObject var vm = ScoresViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView16_3()
+                .environmentObject(vm)
         }
     }
 }

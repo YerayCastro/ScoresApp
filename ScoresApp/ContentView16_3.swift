@@ -8,74 +8,78 @@
 import SwiftUI
 
 /*:
- Pantalla para iPad en iOS13,iOS14 y iOS15. Con el modo de tres paneles.
+ Pantalla para iPad en iOS16. Con el modo de tres paneles.
  */
 
-struct ContentView15_3: View {
+struct ContentView16_3: View {
     @EnvironmentObject var vm: ScoresViewModel
-    
-    @State var selected: Score.ID?
-    @State var composerSelected: String?
-    
+    @State var visibility: NavigationSplitViewVisibility = .all
     
     var body: some View {
-        NavigationView {
-            List(selection: $composerSelected) {
-                ForEach(vm.composers, id: \.self) { composer in
+        NavigationSplitView(columnVisibility: $visibility) {
+            List(vm.composers, id: \.self) { composer in
+                NavigationLink(value: composer) {
                     getComposerRow(composer: composer)
                 }
+                
             }
-            
-            if let composerSelected {
-                List(selection: $selected) {
-                    getComposerList(composer: composerSelected)
-                }
-                .navigationTitle("Scores")
-            } else if let first = vm.composers.first {
-                List {
+            .navigationTitle("Composer")
+            .navigationDestination(for: String.self) { composer in
+                getComposerList(composer: composer)
+            }
+            //.navigationSplitViewColumnWidth(min: 300, ideal: 400, max: 400)
+        } content: {
+            Group {
+                if let first = vm.composers.first {
                     getComposerList(composer: first)
-                        .onAppear {
-                            composerSelected = first
-                        }
                 }
             }
-            
+            //.navigationSplitViewColumnWidth(min: 300, ideal: 325, max: 350)
+        } detail: {
             // Recuperar el primer compositor y la primera partitura
             if let first = vm.composers.first,
                let score = vm.getScoresFormComposer(composer: first).first {
                 ScoreDetailView(score: score)
             }
         }
+        .navigationSplitViewStyle(.balanced)
     }
-        
-        func getComposerList(composer: String) -> some View {
+    
+    func getComposerList(composer: String) -> some View {
+        List {
             ForEach(vm.getScoresFormComposer(composer: composer)) { score in
-                NavigationLink {
-                    ScoreDetailView(score: score)
-                } label: {
+                NavigationLink(value: score) {
                     ScoreCell(score: score)
+                    
                 }
             }
-            .onDelete(perform: vm.deleteScore)
         }
-        
-        func getComposerRow(composer: String) -> some View {
-            HStack {
-                Text(composer)
-                Spacer()
-                Image(composer)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 50)
-                    .clipShape(Circle())
-            }
+        .navigationTitle(composer)
+        #if os(iOS)
+        .navigationBarTitleDisplayMode(.inline)
+        #endif
+        .navigationDestination(for: Score.self) { score in
+            ScoreDetailView(score: score)
         }
     }
     
+    func getComposerRow(composer: String) -> some View {
+        HStack {
+            Text(composer)
+            Spacer()
+            Image(composer)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50)
+                .clipShape(Circle())
+        }
+    }
+}
 
-    
+
+
 #Preview {
-    ContentView15_3()
+    ContentView16_3()
         .environmentObject(ScoresViewModel.preview)
 }
 

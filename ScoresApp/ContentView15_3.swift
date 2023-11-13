@@ -8,44 +8,78 @@
 import SwiftUI
 
 /*:
- Pantalla para iPad en iOS13,iOS14 y iOS15
+ Pantalla para iPad en iOS13,iOS14 y iOS15. Con el modo de tres paneles.
  */
 
-struct ContentView15_2: View {
+struct ContentView15_3: View {
     @EnvironmentObject var vm: ScoresViewModel
     
     @State var selected: Score.ID?
+    @State var composerSelected: String?
     
     
     var body: some View {
         NavigationView {
-            List(selection: $selected) {
-                ForEach (vm.scores) { score in
-                    NavigationLink {
-                        ScoreDetailView(score: score)
-                    } label: {
-                        ScoreCell(score: score)
-                    }
+            List(selection: $composerSelected) {
+                ForEach(vm.composers, id: \.self) { composer in
+                    getComposerRow(composer: composer)
                 }
-                .onDelete(perform: vm.deleteScore)
             }
-            .navigationTitle("Scores")
             
-            // Lo que ponemos en segundo nivel, es lo que aparece en la pantalla, si no está seleccionado el maestro detalle.
-            // Para que aparezca el primer detalle.
-            if let first = vm.scores.first {
-                ScoreDetailView(score: first)
+            if let composerSelected {
+                List(selection: $selected) {
+                    getComposerList(composer: composerSelected)
+                }
+                .navigationTitle("Scores")
+            } else if let first = vm.composers.first {
+                List {
+                    getComposerList(composer: first)
+                        .onAppear {
+                            composerSelected = first
+                        }
+                }
+            }
+            
+            // Recuperar el primer compositor y la primera partitura
+            if let first = vm.composers.first,
+               let score = vm.getScoresFormComposer(composer: first).first {
+                ScoreDetailView(score: score)
+                    .onAppear {
+                        selected = score.id
+                    }
             }
         }
-        .onChange(of: selected) {
-            print(selected ?? "")
+        .tint(.yellow)
+    }
+        
+        func getComposerList(composer: String) -> some View {
+            ForEach(vm.getScoresFormComposer(composer: composer)) { score in
+                NavigationLink {
+                    ScoreDetailView(score: score)
+                } label: {
+                    ScoreCell(score: score)
+                }
+            }
+            .onDelete(perform: vm.deleteScore)
+        }
+        
+        func getComposerRow(composer: String) -> some View {
+            HStack {
+                Text(composer)
+                Spacer()
+                Image(composer)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+                    .clipShape(Circle())
+            }
         }
     }
-}
+    
 
-
+    
 #Preview {
-    ContentView15_2()
+    ContentView15_3()
         .environmentObject(ScoresViewModel.preview)
 }
 

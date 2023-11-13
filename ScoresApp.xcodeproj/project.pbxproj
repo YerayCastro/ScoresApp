@@ -7,21 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C7140AA2AFF900800273040 /* ContentView15_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140A92AFF900800273040 /* ContentView15_2.swift */; };
+		3C7140B32AFF982D00273040 /* Scores Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3C7140B22AFF982D00273040 /* Scores Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3C7140B82AFF982D00273040 /* Scores_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140B72AFF982D00273040 /* Scores_WatchApp.swift */; };
+		3C7140C72AFF998E00273040 /* ScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315362AFBB33F00ACAC62 /* ScoresViewModel.swift */; };
+		3C7140C82AFF998E00273040 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315332AFBB0B300ACAC62 /* DataInteractor.swift */; };
+		3C7140CA2AFF998E00273040 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315302AFBAFEF00ACAC62 /* ScoreModel.swift */; };
+		3C7140CB2AFF998E00273040 /* ContentView16_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315442AFE4DA800ACAC62 /* ContentView16_2.swift */; };
+		3C7140CC2AFF998E00273040 /* ScoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315402AFCE16600ACAC62 /* ScoreDetailView.swift */; };
+		3C7140CD2AFF99A700273040 /* scoresdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3152D2AFBACB700ACAC62 /* scoresdata.json */; };
+		3C7140CE2AFF99A700273040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD315222AFBAC0C00ACAC62 /* Assets.xcassets */; };
+		3C7140CF2AFF99CD00273040 /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3153A2AFBEB7800ACAC62 /* TestInteractor.swift */; };
+		3C7140D02AFF99DA00273040 /* scoresdatatest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CD315382AFBEA0000ACAC62 /* scoresdatatest.json */; };
+		3C7140D12AFF9A8300273040 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD315252AFBAC0C00ACAC62 /* Preview Assets.xcassets */; };
+		3C7140D22AFF9C9800273040 /* ContentView16_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315482AFE5F9500ACAC62 /* ContentView16_3.swift */; };
+		3C7140D62AFFA5C000273040 /* ScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140D52AFFA5C000273040 /* ScoreCell.swift */; };
+		3C7140D82AFFAA5B00273040 /* ScoreDetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140D72AFFAA5B00273040 /* ScoreDetailEditView.swift */; };
+		3C7140DC2AFFAB4A00273040 /* ContentView15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140DB2AFFAB4A00273040 /* ContentView15.swift */; };
+		3C7140DE2AFFAFE300273040 /* TextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140DD2AFFAFE300273040 /* TextFieldX.swift */; };
+		3C7140E02AFFB28C00273040 /* ScoreEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140DF2AFFB28C00273040 /* ScoreEditVM.swift */; };
+		3C7140E32B024B6800273040 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140E22B024B6800273040 /* Extensions.swift */; };
+		3C7140E52B024CA800273040 /* ImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7140E42B024CA800273040 /* ImageInteractor.swift */; };
 		3CD3151F2AFBAC0B00ACAC62 /* ScoresAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3151E2AFBAC0B00ACAC62 /* ScoresAppApp.swift */; };
-		3CD315212AFBAC0B00ACAC62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315202AFBAC0B00ACAC62 /* ContentView.swift */; };
 		3CD315232AFBAC0C00ACAC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD315222AFBAC0C00ACAC62 /* Assets.xcassets */; };
 		3CD315262AFBAC0C00ACAC62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD315252AFBAC0C00ACAC62 /* Preview Assets.xcassets */; };
+		3CD3152E2AFBACB700ACAC62 /* scoresdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CD3152D2AFBACB700ACAC62 /* scoresdata.json */; };
+		3CD315312AFBAFEF00ACAC62 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315302AFBAFEF00ACAC62 /* ScoreModel.swift */; };
+		3CD315342AFBB0B300ACAC62 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315332AFBB0B300ACAC62 /* DataInteractor.swift */; };
+		3CD315372AFBB33F00ACAC62 /* ScoresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315362AFBB33F00ACAC62 /* ScoresViewModel.swift */; };
+		3CD315392AFBEA0000ACAC62 /* scoresdatatest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CD315382AFBEA0000ACAC62 /* scoresdatatest.json */; };
+		3CD3153B2AFBEB7800ACAC62 /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3153A2AFBEB7800ACAC62 /* TestInteractor.swift */; };
+		3CD3153E2AFCDE9E00ACAC62 /* ScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3153D2AFCDE9E00ACAC62 /* ScoreCell.swift */; };
+		3CD315412AFCE16600ACAC62 /* ScoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315402AFCE16600ACAC62 /* ScoreDetailView.swift */; };
+		3CD315452AFE4DA800ACAC62 /* ContentView16_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315442AFE4DA800ACAC62 /* ContentView16_2.swift */; };
+		3CD315472AFE54F100ACAC62 /* ContentView15_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315462AFE54F100ACAC62 /* ContentView15_3.swift */; };
+		3CD315492AFE5F9500ACAC62 /* ContentView16_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD315482AFE5F9500ACAC62 /* ContentView16_3.swift */; };
+		3CD3154B2AFE611C00ACAC62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3154A2AFE611C00ACAC62 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3C7140B42AFF982D00273040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD315132AFBAC0B00ACAC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C7140B12AFF982D00273040;
+			remoteInfo = "Scores Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C7140C32AFF982F00273040 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3C7140B32AFF982D00273040 /* Scores Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3C7140A92AFF900800273040 /* ContentView15_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView15_2.swift; sourceTree = "<group>"; };
+		3C7140AD2AFF982D00273040 /* Scores Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scores Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7140B22AFF982D00273040 /* Scores Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scores Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7140B72AFF982D00273040 /* Scores_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores_WatchApp.swift; sourceTree = "<group>"; };
+		3C7140D52AFFA5C000273040 /* ScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCell.swift; sourceTree = "<group>"; };
+		3C7140D72AFFAA5B00273040 /* ScoreDetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailEditView.swift; sourceTree = "<group>"; };
+		3C7140DB2AFFAB4A00273040 /* ContentView15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView15.swift; sourceTree = "<group>"; };
+		3C7140DD2AFFAFE300273040 /* TextFieldX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldX.swift; sourceTree = "<group>"; };
+		3C7140DF2AFFB28C00273040 /* ScoreEditVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEditVM.swift; sourceTree = "<group>"; };
+		3C7140E22B024B6800273040 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3C7140E42B024CA800273040 /* ImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInteractor.swift; sourceTree = "<group>"; };
 		3CD3151B2AFBAC0B00ACAC62 /* ScoresApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoresApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD3151E2AFBAC0B00ACAC62 /* ScoresAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresAppApp.swift; sourceTree = "<group>"; };
-		3CD315202AFBAC0B00ACAC62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3CD315222AFBAC0C00ACAC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD315252AFBAC0C00ACAC62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CD3152D2AFBACB700ACAC62 /* scoresdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scoresdata.json; sourceTree = "<group>"; };
+		3CD315302AFBAFEF00ACAC62 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
+		3CD315332AFBB0B300ACAC62 /* DataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInteractor.swift; sourceTree = "<group>"; };
+		3CD315362AFBB33F00ACAC62 /* ScoresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewModel.swift; sourceTree = "<group>"; };
+		3CD315382AFBEA0000ACAC62 /* scoresdatatest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scoresdatatest.json; sourceTree = "<group>"; };
+		3CD3153A2AFBEB7800ACAC62 /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
+		3CD3153D2AFCDE9E00ACAC62 /* ScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCell.swift; sourceTree = "<group>"; };
+		3CD315402AFCE16600ACAC62 /* ScoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailView.swift; sourceTree = "<group>"; };
+		3CD315442AFE4DA800ACAC62 /* ContentView16_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView16_2.swift; sourceTree = "<group>"; };
+		3CD315462AFE54F100ACAC62 /* ContentView15_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView15_3.swift; sourceTree = "<group>"; };
+		3CD315482AFE5F9500ACAC62 /* ContentView16_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView16_3.swift; sourceTree = "<group>"; };
+		3CD3154A2AFE611C00ACAC62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C7140AF2AFF982D00273040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD315182AFBAC0B00ACAC62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +117,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7140A82AFF8E6D00273040 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				3C7140A92AFF900800273040 /* ContentView15_2.swift */,
+				3CD315462AFE54F100ACAC62 /* ContentView15_3.swift */,
+				3CD315442AFE4DA800ACAC62 /* ContentView16_2.swift */,
+				3CD315482AFE5F9500ACAC62 /* ContentView16_3.swift */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		3C7140B62AFF982D00273040 /* Scores Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				3C7140D52AFFA5C000273040 /* ScoreCell.swift */,
+				3C7140B72AFF982D00273040 /* Scores_WatchApp.swift */,
+				3C7140BD2AFF982F00273040 /* Preview Content */,
+			);
+			path = "Scores Watch Watch App";
+			sourceTree = "<group>";
+		};
+		3C7140BD2AFF982F00273040 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C7140E12B024B4C00273040 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3C7140E22B024B6800273040 /* Extensions.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		3CD315122AFBAC0B00ACAC62 = {
 			isa = PBXGroup;
 			children = (
 				3CD3151D2AFBAC0B00ACAC62 /* ScoresApp */,
+				3C7140B62AFF982D00273040 /* Scores Watch Watch App */,
 				3CD3151C2AFBAC0B00ACAC62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				3CD3151B2AFBAC0B00ACAC62 /* ScoresApp.app */,
+				3C7140AD2AFF982D00273040 /* Scores Watch.app */,
+				3C7140B22AFF982D00273040 /* Scores Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +176,12 @@
 			isa = PBXGroup;
 			children = (
 				3CD3151E2AFBAC0B00ACAC62 /* ScoresAppApp.swift */,
-				3CD315202AFBAC0B00ACAC62 /* ContentView.swift */,
+				3CD3153F2AFCE07E00ACAC62 /* Views */,
+				3CD3153C2AFCDE8500ACAC62 /* Components */,
+				3CD315352AFBB32300ACAC62 /* ViewModel */,
+				3CD315322AFBB08600ACAC62 /* Interactor */,
+				3CD3152F2AFBAFD300ACAC62 /* Model */,
+				3CD3152C2AFBAC9300ACAC62 /* Resources */,
 				3CD315222AFBAC0C00ACAC62 /* Assets.xcassets */,
 				3CD315242AFBAC0C00ACAC62 /* Preview Content */,
 			);
@@ -62,14 +191,106 @@
 		3CD315242AFBAC0C00ACAC62 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				3CD315382AFBEA0000ACAC62 /* scoresdatatest.json */,
 				3CD315252AFBAC0C00ACAC62 /* Preview Assets.xcassets */,
+				3CD3153A2AFBEB7800ACAC62 /* TestInteractor.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CD3152C2AFBAC9300ACAC62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CD3152D2AFBACB700ACAC62 /* scoresdata.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3CD3152F2AFBAFD300ACAC62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CD315302AFBAFEF00ACAC62 /* ScoreModel.swift */,
+				3C7140E12B024B4C00273040 /* Helper */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3CD315322AFBB08600ACAC62 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3CD315332AFBB0B300ACAC62 /* DataInteractor.swift */,
+				3C7140E42B024CA800273040 /* ImageInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		3CD315352AFBB32300ACAC62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CD315362AFBB33F00ACAC62 /* ScoresViewModel.swift */,
+				3C7140DF2AFFB28C00273040 /* ScoreEditVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		3CD3153C2AFCDE8500ACAC62 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CD3153D2AFCDE9E00ACAC62 /* ScoreCell.swift */,
+				3C7140DD2AFFAFE300273040 /* TextFieldX.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		3CD3153F2AFCE07E00ACAC62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CD3154A2AFE611C00ACAC62 /* ContentView.swift */,
+				3C7140DB2AFFAB4A00273040 /* ContentView15.swift */,
+				3CD315402AFCE16600ACAC62 /* ScoreDetailView.swift */,
+				3C7140D72AFFAA5B00273040 /* ScoreDetailEditView.swift */,
+				3C7140A82AFF8E6D00273040 /* iPad */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C7140AC2AFF982D00273040 /* Scores Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7140C42AFF982F00273040 /* Build configuration list for PBXNativeTarget "Scores Watch" */;
+			buildPhases = (
+				3C7140AB2AFF982D00273040 /* Resources */,
+				3C7140C32AFF982F00273040 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C7140B52AFF982D00273040 /* PBXTargetDependency */,
+			);
+			name = "Scores Watch";
+			productName = "Scores Watch";
+			productReference = 3C7140AD2AFF982D00273040 /* Scores Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3C7140B12AFF982D00273040 /* Scores Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7140C02AFF982F00273040 /* Build configuration list for PBXNativeTarget "Scores Watch Watch App" */;
+			buildPhases = (
+				3C7140AE2AFF982D00273040 /* Sources */,
+				3C7140AF2AFF982D00273040 /* Frameworks */,
+				3C7140B02AFF982D00273040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scores Watch Watch App";
+			productName = "Scores Watch Watch App";
+			productReference = 3C7140B22AFF982D00273040 /* Scores Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3CD3151A2AFBAC0B00ACAC62 /* ScoresApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD315292AFBAC0C00ACAC62 /* Build configuration list for PBXNativeTarget "ScoresApp" */;
@@ -97,6 +318,12 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					3C7140AC2AFF982D00273040 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					3C7140B12AFF982D00273040 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					3CD3151A2AFBAC0B00ACAC62 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
@@ -116,16 +343,38 @@
 			projectRoot = "";
 			targets = (
 				3CD3151A2AFBAC0B00ACAC62 /* ScoresApp */,
+				3C7140AC2AFF982D00273040 /* Scores Watch */,
+				3C7140B12AFF982D00273040 /* Scores Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C7140AB2AFF982D00273040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7140B02AFF982D00273040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7140D12AFF9A8300273040 /* Preview Assets.xcassets in Resources */,
+				3C7140D02AFF99DA00273040 /* scoresdatatest.json in Resources */,
+				3C7140CD2AFF99A700273040 /* scoresdata.json in Resources */,
+				3C7140CE2AFF99A700273040 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD315192AFBAC0B00ACAC62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD315392AFBEA0000ACAC62 /* scoresdatatest.json in Resources */,
 				3CD315262AFBAC0C00ACAC62 /* Preview Assets.xcassets in Resources */,
+				3CD3152E2AFBACB700ACAC62 /* scoresdata.json in Resources */,
 				3CD315232AFBAC0C00ACAC62 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,18 +382,148 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C7140AE2AFF982D00273040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7140CA2AFF998E00273040 /* ScoreModel.swift in Sources */,
+				3C7140C82AFF998E00273040 /* DataInteractor.swift in Sources */,
+				3C7140D22AFF9C9800273040 /* ContentView16_3.swift in Sources */,
+				3C7140CF2AFF99CD00273040 /* TestInteractor.swift in Sources */,
+				3C7140CB2AFF998E00273040 /* ContentView16_2.swift in Sources */,
+				3C7140B82AFF982D00273040 /* Scores_WatchApp.swift in Sources */,
+				3C7140CC2AFF998E00273040 /* ScoreDetailView.swift in Sources */,
+				3C7140D62AFFA5C000273040 /* ScoreCell.swift in Sources */,
+				3C7140C72AFF998E00273040 /* ScoresViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD315172AFBAC0B00ACAC62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD315212AFBAC0B00ACAC62 /* ContentView.swift in Sources */,
+				3CD315342AFBB0B300ACAC62 /* DataInteractor.swift in Sources */,
+				3C7140E02AFFB28C00273040 /* ScoreEditVM.swift in Sources */,
+				3C7140AA2AFF900800273040 /* ContentView15_2.swift in Sources */,
+				3CD315312AFBAFEF00ACAC62 /* ScoreModel.swift in Sources */,
+				3CD3154B2AFE611C00ACAC62 /* ContentView.swift in Sources */,
+				3CD315452AFE4DA800ACAC62 /* ContentView16_2.swift in Sources */,
+				3CD315472AFE54F100ACAC62 /* ContentView15_3.swift in Sources */,
+				3C7140DE2AFFAFE300273040 /* TextFieldX.swift in Sources */,
+				3CD315412AFCE16600ACAC62 /* ScoreDetailView.swift in Sources */,
+				3CD315372AFBB33F00ACAC62 /* ScoresViewModel.swift in Sources */,
+				3C7140DC2AFFAB4A00273040 /* ContentView15.swift in Sources */,
+				3C7140D82AFFAA5B00273040 /* ScoreDetailEditView.swift in Sources */,
+				3CD3153E2AFCDE9E00ACAC62 /* ScoreCell.swift in Sources */,
+				3CD3153B2AFBEB7800ACAC62 /* TestInteractor.swift in Sources */,
+				3C7140E32B024B6800273040 /* Extensions.swift in Sources */,
 				3CD3151F2AFBAC0B00ACAC62 /* ScoresAppApp.swift in Sources */,
+				3C7140E52B024CA800273040 /* ImageInteractor.swift in Sources */,
+				3CD315492AFE5F9500ACAC62 /* ContentView16_3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3C7140B52AFF982D00273040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C7140B12AFF982D00273040 /* Scores Watch Watch App */;
+			targetProxy = 3C7140B42AFF982D00273040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3C7140C12AFF982F00273040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "ScoresApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = K62327QFK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scores Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yerycastro.Scores-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		3C7140C22AFF982F00273040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "ScoresApp/Preview\\ Content";
+				DEVELOPMENT_TEAM = K62327QFK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scores Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yerycastro.Scores-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		3C7140C52AFF982F00273040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K62327QFK2;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scores Watch";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yerycastro.Scores-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3C7140C62AFF982F00273040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K62327QFK2;
+				INFOPLIST_KEY_CFBundleDisplayName = "Scores Watch";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yerycastro.Scores-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		3CD315272AFBAC0C00ACAC62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -325,6 +704,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C7140C02AFF982F00273040 /* Build configuration list for PBXNativeTarget "Scores Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7140C12AFF982F00273040 /* Debug */,
+				3C7140C22AFF982F00273040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7140C42AFF982F00273040 /* Build configuration list for PBXNativeTarget "Scores Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7140C52AFF982F00273040 /* Debug */,
+				3C7140C62AFF982F00273040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3CD315162AFBAC0B00ACAC62 /* Build configuration list for PBXProject "ScoresApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

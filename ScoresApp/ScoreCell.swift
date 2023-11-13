@@ -8,11 +8,41 @@
 import SwiftUI
 
 struct ScoreCell: View {
+    let score: Score
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(score.title)
+                    .font(.headline)
+                Text(score.composer)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                HStack {
+                    Text(score.yearS)
+                    Spacer()
+                    Text(score.lengthS)
+                }
+                .font(.caption)
+                .padding(.top, 5)
+            }
+            if let new = ImageInteractor.shared.loadImage(id: score.id ){
+                Image(uiImage: new)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            } else {
+                Image(score.cover)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
+        }
     }
 }
 
 #Preview {
-    ScoreCell()
+    ScoreCell(score: .test )
 }

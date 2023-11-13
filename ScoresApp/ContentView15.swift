@@ -11,7 +11,7 @@ import SwiftUI
  Cuarta capa: La view
  */
 
-struct ContentView: View {
+struct ContentView15: View {
     /*
      Creamos la variable "vm" como @ObservedObject, instanciando el ViewModel(scoresViewModel)
      */
@@ -47,7 +47,7 @@ struct ContentView: View {
     //ContentView(vm: ScoresViewModel(interactor: TestInteractor()))
     
     // Esto una vez creado el environmentObject
-    ContentView()
+    ContentView15()
     // Pasando los datos de prueba para la preview con TestInteractor
     // -> ScoresViewModel(interactor: TestInteractor()) se pasa a una extensión.Con una variable static llamada preview
         .environmentObject(ScoresViewModel.preview)

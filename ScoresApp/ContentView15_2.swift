@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  ScoresSDP23
+//  ScoresApp
 //
-//  Created by Julio César Fernández Muñoz on 7/11/23.
+//  Created by Yery Castro on 8/11/23.
 //
 
 import SwiftUI
@@ -26,6 +26,8 @@ struct ContentView15_2: View {
             }
             .navigationTitle("Scores")
             
+            // Lo que ponemos en segundo nivel, es lo que aparece en la pantalla, si no está seleccionado el maestro detalle.
+            // Para que aparezca el primer detalle.
             if let first = vm.scores.first {
                 ScoreDetailView(score: first)
             }
